@@ -1,0 +1,511 @@
+<!--end Tutorial-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: #E6E6FA;
+      color: green;
+    }
+
+    a:link {
+      color: #0000FF;
+    }
+
+    a:visited {
+      color: #FF0000;
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-aling: center;
+      text=decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+    .button1 {
+      background-color: #04AA6D;
+    }
+
+    .button2 {
+      background-color: #008CBA;
+    }
+
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+
+    code {
+      font-family: Consolas, "courier new";
+      color: crimson;
+      background-color: #f1f1f1;
+      padding: 2px;
+      font-size: 105%;
+    }
+
+    details>summary {
+      padding: 4px;
+      width: 200px;
+      background-color: #eeeeee;
+      border: none;
+      box-shadow: 1px 1px 2px #bbbbbb;
+      cursor: pointer;
+    }
+
+    details>p {
+      background-color: #eeeeee;
+      padding: 4px;
+      margin: 0;
+      box-shadow: 1px 1px 2px #bbbbbb;
+    }
+
+
+
+
+
+    del {
+      background-color: tomato;
+    }
+
+    ins {
+      background-color: yellow;
+    }
+
+
+
+
+    fieldset {
+      background-color: #eeeeee;
+    }
+
+    legend {
+      background-color: gray;
+      color: white;
+      padding: 5px 10px;
+    }
+
+    input {
+      margin: 5px;
+    }
+
+
+    .myDiv {
+      border: 5px outset red;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+
+    .all-browsers {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+
+    .all-browsers>h1,
+    .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+
+    .browser {
+      background: white;
+    }
+
+    .browser>h2,
+    p {
+      margin: 4px;
+      font-size: 90%
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <h1> The Button Element - Styled with CSS</h1>
+  <p>Change the background color of a button with the background-color property:</p>
+
+
+  <button class="button button1">Green</button>
+  <button class="button button2">Blue</button>
+
+
+  <h1>The canvas element</h1>
+
+  <canvas id="myCanvas">
+    Your browser does not support the canvas tag.
+  </canvas>
+
+  <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    ctx.fillStyle = "red";
+    ctx.fillRect(20, 20, 75, 50);
+
+    //Turn transparency on
+
+
+
+    ctx.globalAlpha = 0.2;
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 75, 50);
+    ctx.fillStyle = "green";
+    ctx.fillRect(80, 80, 75, 50);
+  </script>
+
+
+
+
+
+  <!--start this point-->
+  <!--start this point-->
+  <!--start this point-->
+  <!--start this point-->
+  <!--start this point-->
+
+  <!--<h1>The iframe element</h1>-->
+
+
+  <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials">"
+  </iframe>
+
+
+
+
+
+
+  <h1>The fieldset element + CSS</h1>
+
+  <form action="/action_page.php">
+    <fieldset>
+      <legend>Personalia</legend>
+      <label for="fname">First name:</label>
+      <input type="text" id="lname" name="fname"><br>
+      <br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday"><br><br>
+      <input type="submit" value="Submit">
+    </fieldset>
+  </form>
+
+
+
+
+
+
+  <h1>The div element</h1>
+
+  <div class="myDiv">
+    <h2>This is heading in a div element</h2>
+    <p>This is some text in a div element</p>
+  </div>
+
+
+
+  <h1>The dialog element </h1>
+
+
+  <dialog open> this is an open dialog window</dialog>
+
+
+
+  <h1>The detail and summary element + CSS</h1>
+
+  <details>
+    <summary>Epcot Center</summary>
+    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions,
+      award-winning fireworks and seasonal special events.</p>
+  </details>
+
+
+
+
+
+  <h1>The del and ins elements + CSS</h1>
+
+
+
+  <p>The del and ins elements + CSS</p>
+
+  <p>my favorite color is <del>blue</del>
+    <ins>red</ins>!
+  </p>
+
+
+
+
+  <h1>The col element</h1>
+  <table>
+    <colgroup>
+      <col span="2" style="background-color:red">
+      <col style="background-color:yellow">
+    </colgroup>
+    <tr>
+      <th>ISBN</th>
+      <th>Title</th>
+      <th>Price</th>
+    </tr>
+
+    <tr>
+      <td>3476896</td>
+      <td>My first HTML</td>
+      <td>$53</td>
+    </tr>
+
+    <tr>
+      <td>5869207</td>
+      <td>my first CSS</td>
+      <td>$49</td>
+    </tr>
+  </table>
+
+
+
+  <h1>The data element</h1>
+
+  <ul>
+    <li><data value="21053">Cherry Tomato</data></li>
+    <li><data value="21054">Beef Tomato</data></li>
+    <li><data value="21055">Snack Tomato</data></li>
+  </ul>
+
+
+
+
+  </colgroup>
+  </table>
+
+
+
+  <h1>The code element + CSS</h1>
+
+  <p>The HTML<code>button</code>tag defines a clickable button</p>
+
+  <p>The CSS <code>background-color</code>
+    property defines the background color of an element</p>
+
+
+
+  <h1>The caption element</h1>
+  <table>
+    <caption>Monthly savings</caption>
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$50</td>
+    </tr>
+  </table>
+
+
+
+
+
+  <button type="button" onclick="alert('Hello world!')">Click ME!!</button>
+
+
+
+
+  <h1> The article element - Styled with CSS </h1>
+
+
+  <article class="all-browsers">
+    <h1>Most Popular Browsers</h1>
+    <article class="browser">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by
+        Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <article class="browser">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular
+        web browser since January, 2018.</p>
+    </article>
+    <article class="browser">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet
+        Explorer.</p>
+    </article>
+  </article>
+
+
+
+
+
+
+
+  <H3>HTML5 canvas</H3>
+
+  <canvas id="myCanvas" width="300" height="150" style="border:1px solid grey"></canvas>
+
+  <script>
+    const c = document.getElementById("myCanvas");
+    const ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(50, 50);
+    ctx.lineTo(20, 70);
+    ctx.lineTo(70, 70);
+    ctx.strokeStyle = "blue";
+    ctx.stroke();
+  </script>
+
+
+
+  <p>
+    An image as a link<a href="https://www.w3Schools.com">
+      <img border="0" alt="W3Schools" src="logo_w3s.gif" width="100" height="100">
+    </a>
+  </p>
+
+
+
+  <h1>The a target attribute</h1>
+  <a href="https://www.w3schools.com" target="_black">Visit W3Schools.com!!</a>
+  <p>If you set the target attribute to "_blank", the link will open in a new browser window or a new tab.</p>
+
+
+
+
+  <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href
+    attribute:</p>
+  <p><a href="mailto:someone@example.com"> 이메일 링크 Send email</a>
+  </p>
+
+
+
+
+  <p>To create a link to a telephone number, use tel: inside the href attribute:</p>
+  <p><a href="tel:01030670078">+010 3067 0078</a></p>
+
+
+  <a href="javascript:alert('Hello World!');"> Execute JavaScript</a>
+
+
+  <h1>The abbr element</h1>
+  <p>The <abbr title="World Health Organization">WHO</abbr>abbr> was founded in 1948</p>
+
+
+
+  <h1>The abbr element + the dfn element</h1>
+
+  <p><dfn><abbr title="Cascading Style Sheets">CSS</dfn>
+    is a language that describes the style of an HTML document
+  </p>
+
+
+  abbr{
+  display: inline;
+  }
+
+  <p>An abbr element is displayed like this:</p>
+
+  <p><abbr title="Hyper Text Markup Language">HTML</abbr>
+    describes the structure of Web pages using markup.
+  </p>
+  <p>Change the default CSS settings to see the effect</p>
+
+
+
+  The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+
+
+  <h3>Email !</h3>
+  <address>
+    Written by <a href="mailto:webmaster@example.com">Jon Doe</a><br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564.Disneyland<br>
+    USA
+  </address>
+
+
+
+
+  <h3>address !</h3>
+  address{
+  displat: block;
+  font-style: italic;
+  }
+
+
+
+
+  <h4>video !</h4>
+  <video width="320" height="240" controls>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+
+
+
+  <h5>audio!</h5>
+  <audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag
+  </audio>
+
+
+  <h6>aside</h6>
+  <style>
+    body {
+      backrground-image: url(w3s.png);
+    }
+
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      margin-left: 15px;
+      float: right;
+      font-style: italic;
+      background-color: lightgray;
+    }
+  </style>
+
+
+
+  <aside>
+    <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international
+      pavilions, award-winning fireworks and seasonal special events.</p>
+  </aside>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
